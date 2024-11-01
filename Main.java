@@ -1,9 +1,10 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import Decorator.ComboDecorator;
+// import Decorator.ComboDecorator;
 import Decorator.FreeItemDecorator;
 import Item.Burger;
+import Item.Combo;
 import Item.Combo1;
 import Item.Combo2;
 import Item.Drink;
@@ -46,7 +47,8 @@ public class Main {
                 System.out.println("Discount <amount>");
                 System.out.println("Free <item name>");
                 System.out.println("Done");
-                ComboDecorator combo = new ComboDecorator(name);
+                // ComboDecorator combo = new ComboDecorator(name);
+                Combo combo = new Combo(name);
                 while(true){
                     String str = sc.nextLine().trim();
                     String[] arr = str.split("\\s+", 2);
