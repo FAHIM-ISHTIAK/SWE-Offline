@@ -14,7 +14,7 @@ public  class FreeItemDecorator extends Decorator {
     
     
     public String getDetails(){
-        return item.getName() + " (Free)";
+        return item.getName() + " (Free!!!)";
     }
 
     public  double getPrice(){
